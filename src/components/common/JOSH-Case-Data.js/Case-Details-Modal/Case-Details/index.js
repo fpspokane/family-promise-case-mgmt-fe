@@ -1,6 +1,8 @@
 import React from 'react';
 import { Collapse } from 'antd';
 
+import ClientInfo from './Form-Client-Info';
+
 const { Panel } = Collapse;
 
 // ==============================================
@@ -17,7 +19,7 @@ export default function CaseDetails() {
   // --------------------------------------------
 
   return (
-    <Collapse accordion>
+    <Collapse defaultActiveKey={['4']} accordion>
       <Panel header="Client Details" key="1">
         <p>{text}</p>
       </Panel>
@@ -28,7 +30,7 @@ export default function CaseDetails() {
         <p>{text}</p>
       </Panel>
       <Panel header="Client Information" key="4">
-        <p>{text}</p>
+        <ClientInfo />
       </Panel>
       <Panel header="Medical Information" key="5">
         <p>{text}</p>
