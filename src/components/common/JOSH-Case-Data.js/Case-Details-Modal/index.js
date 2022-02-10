@@ -1,6 +1,8 @@
 import React from 'react';
 import { Modal } from 'antd';
 
+import CaseDetails from './Case-Details';
+
 // ==============================================
 
 export default function CaseDetailsModal(p) {
@@ -27,9 +29,7 @@ export default function CaseDetailsModal(p) {
         onOk={handleOk}
         onCancel={handleCancel}
       >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        <CaseDetails />
       </Modal>
     </>
   );

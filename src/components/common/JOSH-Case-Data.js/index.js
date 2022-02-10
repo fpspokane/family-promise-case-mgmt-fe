@@ -29,6 +29,27 @@ export default function CaseData() {
       note:
         'Met with family. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
     },
+    {
+      case_id: 'XXXX',
+      first_name: 'John',
+      last_name: 'Doe',
+      note:
+        'Met with family. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+    },
+    {
+      case_id: 'XXXX',
+      first_name: 'John',
+      last_name: 'Doe',
+      note:
+        'Met with family. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+    },
+    {
+      case_id: 'XXXX',
+      first_name: 'John',
+      last_name: 'Doe',
+      note:
+        'Met with family. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+    },
   ];
 
   const dataSource = data.map((d, idx) => ({
