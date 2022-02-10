@@ -24,7 +24,8 @@ import { FamilyIntake } from './components/common/FamilyIntake';
 import Navigation from './components/common/Navigation';
 
 // JOSH
-import CaseData from './components/common/JOSH-Case-Data.js';
+import CaseData from './components/pages/JOSH-Case-Data';
+import CaseDetailsPage from './components/pages/JOSH-Case-Details';
 // JOSH
 
 ReactDOM.render(
@@ -65,7 +66,8 @@ function App() {
         <SecureRoute path="/datavis" component={ExampleDataViz} />
 
         {/* JOSH */}
-        <Route path="/" component={CaseData} exact />
+        <Route path="/case-data" component={CaseData} exact />
+        <Route path="/case-details" component={CaseDetailsPage} exact />
         {/* JOSH */}
 
         <Route component={NotFoundPage} />
