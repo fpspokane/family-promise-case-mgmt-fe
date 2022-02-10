@@ -20,8 +20,12 @@ import { ExampleDataViz } from './components/pages/ExampleDataViz';
 import { config } from './utils/oktaConfig';
 import { FamilyListTable } from './components/common/FamilylistTable';
 import { CaseViewPage } from './components/pages/CaseView';
-import {FamilyIntake} from './components/common/FamilyIntake'; 
+import { FamilyIntake } from './components/common/FamilyIntake';
 import Navigation from './components/common/Navigation';
+
+// JOSH
+import CaseData from './components/common/JOSH-Case-Data.js';
+// JOSH
 
 ReactDOM.render(
   <Router>
@@ -47,7 +51,7 @@ function App() {
 
   return (
     <Security {...config} onAuthRequired={authHandler}>
-      <Navigation /> 
+      <Navigation />
       <Switch>
         <Route path="/login" component={LoginPage} />
         <Route path="/implicit/callback" component={LoginCallback} />
@@ -59,6 +63,11 @@ function App() {
         <SecureRoute path="/family-intake-form" component={FamilyIntake} />
         <SecureRoute path="/profile-list" component={ProfileListPage} />
         <SecureRoute path="/datavis" component={ExampleDataViz} />
+
+        {/* JOSH */}
+        <Route path="/" component={CaseData} exact />
+        {/* JOSH */}
+
         <Route component={NotFoundPage} />
       </Switch>
     </Security>
